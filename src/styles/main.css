@@ -1,5 +1,13 @@
 /* main styles for the app */
 
+
+body{
+    background-image: linear-gradient(to right, #373B44, #4286f4 );
+}
+.header{
+    font-size: calc(10px + 2vmin);
+    text-align : center;
+}
 .button {
     margin : auto;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
@@ -42,5 +50,23 @@ outline: 0 !important;
     } 
 }
 .quote-body{
+    align-content: center;
+    text-align : center;
     padding-top : 40px;
+
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration : 3s;
+    transform-style : preserve-3d;
+}
+
+@keyframes spinner {
+    from {
+        transform : rotateY(0deg);
+    }
+
+    to {
+        transform : rotateY(-360deg);
+    }
 }
